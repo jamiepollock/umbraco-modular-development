@@ -173,6 +173,14 @@
       <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Our.Umbraco.Ditto, Version=0.10.6091.32633, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Our.Umbraco.Ditto.0.10.0\lib\net45\Our.Umbraco.Ditto.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Our.Umbraco.NestedContent, Version=0.3.6033.18955, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Our.Umbraco.NestedContent.0.3.0\lib\net45\Our.Umbraco.NestedContent.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
       <Private>True</Private>
@@ -300,6 +308,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Plugins\NestedContent\Css\nestedcontent.css" />
+    <Content Include="App_Plugins\NestedContent\Js\nestedcontent.controllers.js" />
+    <Content Include="App_Plugins\NestedContent\Js\nestedcontent.directives.js" />
+    <Content Include="App_Plugins\NestedContent\Js\nestedcontent.resources.js" />
+    <Content Include="App_Plugins\NestedContent\Views\nestedcontent.doctypepicker.html" />
+    <Content Include="App_Plugins\NestedContent\Views\nestedcontent.editor.html" />
+    <Content Include="App_Plugins\NestedContent\Views\nestedcontent.html" />
     <Content Include="packages.config" />
     <Content Include="App_Plugins\ModelsBuilder\package.manifest" />
     <Content Include="Views\Web.config" />
@@ -329,6 +344,7 @@
     <Content Include="Config\BaseRestExtensions.config" />
     <Content Include="Config\applications.config" />
     <Content Include="Config\404handlers.config" />
+    <Content Include="App_Plugins\NestedContent\package.manifest" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
