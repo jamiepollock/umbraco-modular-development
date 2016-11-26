@@ -360,6 +360,8 @@
     <Content Include="App_Plugins\DocTypeGridEditor\Render\DocTypeGridEditorPreviewer.cshtml" />
     <Content Include="App_Plugins\DocTypeGridEditor\Render\DocTypeGridEditor.cshtml" />
     <Content Include="App_Plugins\DocTypeGridEditor\package.manifest" />
+    <Content Include="Views\Partials\DisplayTemplates\PromoBoxesViewModel.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\DocTypeGridEditor\PromoBoxes.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -399,6 +401,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\PromoBoxesViewModel.cs" />
     <Compile Include="ViewModels\PromoBoxViewModel.cs" />
+    <Compile Include="ViewModels\ViewModelExtensionMethods.cs" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />

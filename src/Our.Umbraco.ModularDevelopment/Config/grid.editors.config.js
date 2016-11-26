@@ -147,5 +147,21 @@
 	        "style": "overflow: auto;padding: 6px 10px;border: 1px solid #ddd;border-radius: 3px;background-color: #f8f8f8;font-size: .9rem;font-family: 'Courier 10 Pitch', Courier, monospace;line-height: 19px;",
 	        "markup": "<pre>#value#</pre>"
 	    }
-	}
+	},
+    {
+        "name": "Promo Boxes",
+        "alias": "promoBoxes",
+        "view": "/App_Plugins/DocTypeGridEditor/Views/doctypegrideditor.html",
+        "render": "/App_Plugins/DocTypeGridEditor/Render/DocTypeGridEditor.cshtml",
+        "icon": "icon-box",
+        "config": {
+            "allowedDocTypes": [ "compositionPromoBoxes" ],
+            "nameTemplate": "",
+            "enablePreview": true,
+            "viewPath": "/Views/Partials/Grid/Editors/DocTypeGridEditor/",
+            "previewViewPath": "/Views/Partials/Grid/Editors/DocTypeGridEditor/Previews/",
+            "previewCssFilePath": "",
+            "previewJsFilePath": ""
+        }
+    }
 ]

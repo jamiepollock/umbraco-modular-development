@@ -1,12 +1,19 @@
 ﻿using Our.Umbraco.Ditto;
 using System.Collections.Generic;
 using System.Linq;
+using System.Web;
 
 namespace Our.Umbraco.ModularDevelopment.ViewModels
 {
     [UmbracoProperties(Prefix = "promoBoxes_")]
     public class PromoBoxesViewModel
     {
+        [UmbracoProperty]
+        public string Title { get; set; }
+
+        [UmbracoProperty]
+        public IHtmlString Intro { get; set; }
+
         [UmbracoProperty]
         public IEnumerable<PromoBoxViewModel> Items { get; set; }
 

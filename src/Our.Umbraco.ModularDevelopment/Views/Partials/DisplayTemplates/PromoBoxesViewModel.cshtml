@@ -1,0 +1,26 @@
+﻿@using Our.Umbraco.ModularDevelopment.ViewModels
+@model PromoBoxesViewModel
+@if (Model.Items.Any())
+{
+    if (Model.HasTitleOrIntro())
+    {
+        <div class="row">
+            <h2>@Model.Title</h2>
+            @Model.Intro
+        </div>
+    }
+    <div class="row">
+        @foreach (var item in Model.Items)
+        {
+            <div class="col-sm-6 col-md-@Model.ColumnWidth">
+                <div class="thumbnail">
+                    <img alt="@item.Title" src="@item.Thumbnail" style="height: 200px; width: 100%; display: block;">
+                    <div class="caption">
+                        <h3>@item.Title</h3>
+                        @item.Content
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
