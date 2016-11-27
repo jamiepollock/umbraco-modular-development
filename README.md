@@ -23,7 +23,7 @@ This project was built to run with IIS Express built into Visual Studio but with
 
 To access the demo Umbraco CMS access use the following credentials:
 
-**User:** admin@admin.com
+**Username:** admin@admin.com  
 **Password:** password
 
 ## Feedback 
