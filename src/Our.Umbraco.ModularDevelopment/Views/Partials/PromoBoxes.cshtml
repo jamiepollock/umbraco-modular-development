@@ -1,12 +1,16 @@
-﻿@inherits Our.Umbraco.Ditto.DittoView<Our.Umbraco.ModularDevelopment.ViewModels.PromoBoxesViewModel>
-<div class="grid-section">
-    <div class="light">
-        <div class="container">
-            <div class="row clearfix">
-                <div class="col-md-12 column">
-                    @Html.DisplayFor(model => model.View)
+﻿@using Our.Umbraco.ModularDevelopment.ViewModels;
+@inherits Our.Umbraco.Ditto.DittoView<PromoBoxesViewModel>
+@if (Model.View != null && Model.View.HasItems())
+{
+    <div class="grid-section">
+        <div class="light">
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="col-md-12 column">
+                        @Html.DisplayFor(model => model.View)
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+}

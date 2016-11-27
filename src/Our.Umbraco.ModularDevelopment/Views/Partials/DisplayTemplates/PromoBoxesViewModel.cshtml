@@ -1,8 +1,8 @@
 ﻿@using Our.Umbraco.ModularDevelopment.ViewModels
 @model PromoBoxesViewModel
-@if (Model.Items.Any())
+@if (Model.HasItems())
 {
-    if (Model.HasTitleOrIntro())
+    if (Model.HasTitle())
     {
         <div class="row">
             <h2>@Model.Title</h2>

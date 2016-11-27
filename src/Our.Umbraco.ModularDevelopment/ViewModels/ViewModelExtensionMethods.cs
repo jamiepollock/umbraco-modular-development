@@ -1,16 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Linq;
 
 namespace Our.Umbraco.ModularDevelopment.ViewModels
 {
     public static class ViewModelExtensionMethods
     {
-        public static bool HasTitleOrIntro(this PromoBoxesViewModel viewModel)
+        public static bool HasTitle(this PromoBoxesViewModel viewModel)
         {
-            return string.IsNullOrWhiteSpace(viewModel.Title) == false
-                || (viewModel.Intro != null && string.IsNullOrWhiteSpace(viewModel.Intro.ToHtmlString()) == false);
+            return string.IsNullOrWhiteSpace(viewModel.Title) == false;
+        }
+        public static bool HasItems(this PromoBoxesViewModel viewModel)
+        {
+            return viewModel.Items != null 
+                && viewModel.Items.Any();
         }
     }
 }
