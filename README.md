@@ -1,6 +1,6 @@
 # Modular Development demo for Umbraco v7
 
-This is a demo repo which is here to support an article I did for the 24 Days In Umbraco project 2016.
+This is a demo repo which is here to support [an article](http://24days.in/umbraco-cms/2016/modular-development/) I did for the 24 Days In Umbraco project 2016.
 
 ## Build
 
